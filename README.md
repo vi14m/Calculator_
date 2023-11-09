@@ -39,4 +39,4 @@ exp4j - A mathematical expression evaluator library for Java and Android.
 
 ## Screenshots
 
-![Calculator Screenshot](https://github.com/vi14m/Calculator_/blob/master/Screenshot_20231109_162732.png)
+<img src="https://github.com/vi14m/Calculator_/blob/master/Screenshot_20231109_162732.png" width="300" alt="Calculator Screenshot">
