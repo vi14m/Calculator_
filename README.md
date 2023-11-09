@@ -22,7 +22,6 @@ This repository contains a simple Android calculator app developed using Kotlin 
    ```bash
    git clone https://github.com/your-username/calculator.git
 
-
 Open the project in Android Studio.
 
 Build and run the app on an Android emulator or a physical device.
