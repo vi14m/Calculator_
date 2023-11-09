@@ -37,4 +37,6 @@ Build and run the app on an Android emulator or a physical device.
 ## Dependencies
 exp4j - A mathematical expression evaluator library for Java and Android.
 
-!https://github.com/vi14m/Calculator_/blob/main/Screenshot_20231109_162732.png?raw=true
+## Screenshots
+
+![Calculator Screenshot](https://github.com/vi14m/Calculator_/blob/master/Screenshot_20231109_162732.png)
