@@ -4,7 +4,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
+    <color name="dark_10">#2069e0</color>
     <color name="linecolor">#DAD8D8</color>
+    <color name="Black20">#22252d</color>
+    <color name="Black500">#292d36</color>
+    <color name="output">#4d494a</color>
     <color name="btnBackground">#FFFFFF</color>
-    <color name="btnBackground2">#FF9800</color>
+    <color name="btnBackground1">#26dabd</color>
+    <color name="btnBackground2">#d66060</color>
 </resources>

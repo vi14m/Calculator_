@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Black500"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,10 +14,11 @@
         android:layout_marginEnd="12dp"
         android:text=""
         android:textAlignment="viewEnd"
-        android:textColor="@color/black"
-        android:textSize="28dp"
+        android:textColor="@color/white"
+        android:textSize="36dp"
         app:layout_constraintBottom_toTopOf="@+id/result_tv"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/result_tv" />
 
     <TextView
@@ -24,11 +26,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
-        android:visibility="gone"
         android:text=""
         android:textAlignment="viewEnd"
         android:textColor="#767474"
         android:textSize="28dp"
+        android:visibility="gone"
 
         app:layout_constraintBaseline_toTopOf="@id/line"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,9 +40,9 @@
         android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/linecolor"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        android:layout_marginBottom="6dp"/>
+        android:layout_marginBottom="6dp"
+        android:background="@color/Black500"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -54,160 +56,278 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/Black20"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
 
             <com.google.android.material.button.MaterialButton
-                style="@style/operatorbutton"
                 android:id="@+id/btn_clear"
+                style="@style/operatorbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onClearClick"
                 android:text="C"
-                />
+                android:textColor="@color/btnBackground1"
+                android:textSize="24sp"
+                app:cornerRadius="12dp" />
+
             <com.google.android.material.button.MaterialButton
-                style="@style/operatorbutton"
                 android:id="@+id/btn_back"
-                android:onClick="onBackClick"
-                app:icon="@drawable/baseline_backspace_24"
-                app:iconTint="@color/btnBackground2"
-                />
-            <com.google.android.material.button.MaterialButton
                 style="@style/operatorbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
+                android:onClick="onBackClick"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/baseline_backspace_24"
+                app:iconSize="20dp"
+                app:iconTint="@color/btnBackground1" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_modulo"
+                style="@style/operatorbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onOperatorClick"
                 android:text="%"
-                />
+                android:textSize="26sp"
+                app:cornerRadius="12dp" />
+
             <com.google.android.material.button.MaterialButton
-                style="@style/operatorbutton"
                 android:id="@+id/btn_divide"
+                style="@style/operatorbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onOperatorClick"
                 android:text="/"
-                />
+                android:textSize="26sp"
+                app:cornerRadius="12dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/Black20"
             android:gravity="center"
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_7"
                 style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
-                android:text="7" />
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
+
             <com.google.android.material.button.MaterialButton
-                style="@style/digitbutton"
                 android:id="@+id/btn_8"
+                style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
                 android:text="8"
-                />
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_9"
                 style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
-                android:text="9" />
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
+
             <com.google.android.material.button.MaterialButton
-                style="@style/operatorbutton"
                 android:id="@+id/btn_multiply"
+                style="@style/operatorbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onOperatorClick"
                 android:text="*"
-                />
+                android:textSize="26sp"
+                app:cornerRadius="12dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/Black20"
             android:gravity="center"
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_4"
                 style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
-                android:text="4" />
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_5"
                 style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
-                android:text="5" />
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_6"
                 style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
-                android:text="6" />
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
+
             <com.google.android.material.button.MaterialButton
-                style="@style/operatorbutton"
                 android:id="@+id/btn_add"
+                style="@style/operatorbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onOperatorClick"
                 android:text="+"
-                />
+                android:textSize="26sp"
+                app:cornerRadius="12dp" />
         </LinearLayout>
 
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/Black20"
             android:gravity="center"
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_1"
                 style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
-                android:text="1" />
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_2"
                 style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
-                android:text="2" />
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_3"
                 style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
-                android:text="3" />
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
-                style="@style/operatorbutton"
                 android:id="@+id/btn_subtract"
+                style="@style/operatorbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onOperatorClick"
-                android:text="-" />
+                android:text="-"
+                android:textSize="26sp"
+                app:cornerRadius="12dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/Black20"
             android:gravity="center"
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                style="@style/operatorbutton"
                 android:id="@+id/btn_allclear"
-                android:textSize="20dp"
+                style="@style/operatorbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onAllclearClick"
                 android:text="AC"
-                />
+                android:textColor="@color/btnBackground1"
+                android:textSize="14sp"
+                app:cornerRadius="12dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_0"
                 style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
-                android:text="0" />
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
+
             <com.google.android.material.button.MaterialButton
-                style="@style/digitbutton"
                 android:id="@+id/btn_dot"
+                style="@style/digitbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onDigitClick"
                 android:text="."
-                />
-            <com.google.android.material.button.MaterialButton
-                style="@style/operatorbutton"
-                android:id="@+id/btn_equal"
                 android:textColor="@color/white"
-                android:backgroundTint="@color/btnBackground2"
+                android:textSize="23sp"
+                app:cornerRadius="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_equal"
+                style="@style/operatorbutton"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/Black500"
                 android:onClick="onEqualClick"
                 android:text="="
-                />
+                android:textColor="@color/btnBackground2"
+                android:textSize="26sp"
+                app:cornerRadius="12dp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
